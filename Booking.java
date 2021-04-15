@@ -17,13 +17,13 @@ public class Booking {
 		LocalTime currentTime=LocalTime.now();
 		if(cabPickUpTime.isAfter(currentTime))
 		{
-			System.out.println("     Please wait a minute....");
+			System.out.println("     Please wait a minute....    ");
 			PeakHours.excessRate(totalgst,cabPickUpTime,distance);
 			
 		}
 		else if(cabPickUpTime == currentTime)
 		{
-			System.out.println("selva");
+			System.out.println("       Please wait a minute....   ");
 			PeakHours.excessRate(totalgst,cabPickUpTime,distance);
 		}
 		else if(cabPickUpTime.isBefore(currentTime))
