@@ -11,7 +11,7 @@ public class PeakHours {
 		//System.out.println("Hour:"+hour);
 		if(hour >=17 &&  hour <= 19)
 		{
-			float peakHoursRate0=(7*distance*1.25f)/100 ;   //1.25 % for one Km
+			float peakHoursRate0=(distance*1.25f)/100 ;   //1.25 % for one Km
 			float peakHoursRate=peakHoursRate0 + totalgst;
 			System.out.println("PeakHour Amount : " +peakHoursRate0);
 			System.out.println("Total Fare after addition of peakhour Rate : "+peakHoursRate);
