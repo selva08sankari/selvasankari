@@ -27,8 +27,8 @@ public class LoginPage {
 		String password =sc.nextLine();                  //Get the password from user
 		if(password.length()==8)
 		{
-			System.out.println("    Password Verified successfully    ");
-			CabTypes.selectCab();
+			System.out.println("    Password Verified successfully    ");   
+			CabTypes.selectCab();                    //call the next method to select the cabtype
 		}
 		else
 		{
