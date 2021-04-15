@@ -6,25 +6,25 @@ public class LoginPage {
 	public static void mobileNumber()
 	{
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the Mobile Number:");
-		Long mobileNo=sc.nextLong();
+		System.out.println("Enter the Mobile Number:");  
+		Long mobileNo=sc.nextLong();                      // Get the mobile number from user
 		String mobileNum=String.valueOf(mobileNo);
 		
 		if(mobileNum.length()==10)
 		{
-            passWord();
+                        passWord();                              //if mobilenumber is validated call the password method
 		}
 			else
 			{		    	
 				System.out.println("Invalid Mobile Number.please provide 10 digit number");
-				mobileNumber();
+				mobileNumber();                  //if mobilenumber is not valid call the same method to reenter
 			}
 	}
 	public static void passWord()
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the Password:");
-		String password =sc.nextLine();
+		String password =sc.nextLine();                  //Get the password from user
 		if(password.length()==8)
 		{
 			System.out.println("    Password Verified successfully    ");
@@ -33,10 +33,10 @@ public class LoginPage {
 		else
 		{
 			System.out.println("Invalid Password.Please provide 8 digit passward");
-			passWord();
+			passWord();                              //if password is not valid call the same method to reenter
 		}
 	}
 	public static void main(String[] args) {
-		mobileNumber();
+		mobileNumber();                                 // call the method to proceed the login details
 }
 }
